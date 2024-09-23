@@ -1,0 +1,1250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>apple-apple</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="./assets/css/layout.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+
+    
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollToPlugin.min.js"></script> -->
+    <script src="./assets/js/main.js" defer></script>
+</head>
+<body class="dark">
+    <header id="header">
+        <nav class="gnb">
+            <h1 class="logo">
+                <a href="">
+                    <svg height="44" viewBox="0 0 14 44" width="14" xmlns="http://www.w3.org/2000/svg">
+                        <path d="m13.0729 17.6825a3.61 3.61 0 0 0 -1.7248 3.0365 3.5132 3.5132 0 0 0 2.1379 3.2223 8.394 8.394 0 0 1 -1.0948 2.2618c-.6816.9812-1.3943 1.9623-2.4787 1.9623s-1.3633-.63-2.613-.63c-1.2187 0-1.6525.6507-2.644.6507s-1.6834-.9089-2.4787-2.0243a9.7842 9.7842 0 0 1 -1.6628-5.2776c0-3.0984 2.014-4.7405 3.9969-4.7405 1.0535 0 1.9314.6919 2.5924.6919.63 0 1.6112-.7333 2.8092-.7333a3.7579 3.7579 0 0 1 3.1604 1.5802zm-3.7284-2.8918a3.5615 3.5615 0 0 0 .8469-2.22 1.5353 1.5353 0 0 0 -.031-.32 3.5686 3.5686 0 0 0 -2.3445 1.2084 3.4629 3.4629 0 0 0 -.8779 2.1585 1.419 1.419 0 0 0 .031.2892 1.19 1.19 0 0 0 .2169.0207 3.0935 3.0935 0 0 0 2.1586-1.1368z"></path>
+                    </svg>
+                </a>
+            </h1>
+            <ul class="gnb-list">
+                <li class="gnb-item"><a href="" class="gnb-title">Store</a></li>
+                <li class="gnb-item"><a href="" class="gnb-title">Mac</a></li>
+                <li class="gnb-item"><a href="" class="gnb-title">iPad</a></li>
+                <li class="gnb-item"><a href="" class="gnb-title">iPhone</a></li>
+                <li class="gnb-item"><a href="" class="gnb-title">Watch</a></li>
+                <li class="gnb-item"><a href="" class="gnb-title">Vision</a></li>
+                <li class="gnb-item"><a href="" class="gnb-title">AirPods</a></li>
+                <li class="gnb-item"><a href="" class="gnb-title">TV & Home</a></li>
+                <li class="gnb-item"><a href="" class="gnb-title">Entertainment</a></li>
+                <li class="gnb-item"><a href="" class="gnb-title">Accessories</a></li>
+                <li class="gnb-item"><a href="" class="gnb-title">Support</a></li>
+            </ul>
+            <ul class="util-list">
+                <li class="util-item">
+                    <a href="" class="util-title">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="15px" height="44px" viewBox="0 0 15 44">
+                            <path d="M14.298,27.202l-3.87-3.87c0.701-0.929,1.122-2.081,1.122-3.332c0-3.06-2.489-5.55-5.55-5.55c-3.06,0-5.55,2.49-5.55,5.55 c0,3.061,2.49,5.55,5.55,5.55c1.251,0,2.403-0.421,3.332-1.122l3.87,3.87c0.151,0.151,0.35,0.228,0.548,0.228 s0.396-0.076,0.548-0.228C14.601,27.995,14.601,27.505,14.298,27.202z M1.55,20c0-2.454,1.997-4.45,4.45-4.45 c2.454,0,4.45,1.997,4.45,4.45S8.454,24.45,6,24.45C3.546,24.45,1.55,22.454,1.55,20z"></path>
+                        </svg>
+                    </a>
+                </li>
+                <li class="util-item">
+                    <a href="" class="util-title">
+                        <svg height="44" viewBox="0 0 14 44" width="14" xmlns="http://www.w3.org/2000/svg">
+                            <path d="m11.3535 16.0283h-1.0205a3.4229 3.4229 0 0 0 -3.333-2.9648 3.4229 3.4229 0 0 0 -3.333 2.9648h-1.02a2.1184 2.1184 0 0 0 -2.117 2.1162v7.7155a2.1186 2.1186 0 0 0 2.1162 2.1167h8.707a2.1186 2.1186 0 0 0 2.1168-2.1167v-7.7155a2.1184 2.1184 0 0 0 -2.1165-2.1162zm-4.3535-1.8652a2.3169 2.3169 0 0 1 2.2222 1.8652h-4.4444a2.3169 2.3169 0 0 1 2.2222-1.8652zm5.37 11.6969a1.0182 1.0182 0 0 1 -1.0166 1.0171h-8.7069a1.0182 1.0182 0 0 1 -1.0165-1.0171v-7.7155a1.0178 1.0178 0 0 1 1.0166-1.0166h8.707a1.0178 1.0178 0 0 1 1.0164 1.0166z"></path>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <section class="sc-intro rel">
+                <h2 class="first-title">iPad Pro</h2>
+                <div class="intro-content">
+                    <div class="video-wrap">
+                        <video playsinline="" muted="" id="intro-video">
+                            <source src="https://www.apple.com/105/media/us/ipad-pro/2024/97d7edf3-aac0-443d-9731-38d40ff50951/anim/hero/large.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="img-wrap">
+                        <img src="./assets/images/hero_endframe__sg50vzdd6sqm_large.jpg" alt="">
+                    </div>
+                    <div class="title-wrap">
+                        <h2 class="title">iPad Pro</h2>
+                        <p class="desc-txt gradient-text">Thinpossible.</p>
+                    </div>
+                    <div class="price-wrap">
+						<p class="intro-price">
+							<span>From $999</span>
+                            <span> or $83.25/mo. for 12 mo.</span><sup class="footnote"><a href="">*</a></sup>                            
+						</p>
+						<a href="" class="link-btn link-buy">Buy</a>
+					</div>
+                </div>
+            </section>
+            <section class="sc-highlights sc-slide rel">
+                <div class="title-wrap inner">
+                    <h2 class="sect-headline">Get the highlights.</h2>
+                    <div class="btn-area">
+                        <a href="" class="popup-btn">Watch the film <span class="icon icon-after icon-playcircle"></span></a>
+                        <a href="" class="link-btn ">Watch the event <span class="icon icon-after icon-arrow"></span></a>
+                    </div>
+                </div>
+                <div class="access-wrap">
+                    <div class="pagination-content">
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-control">
+                            <button class="swiper-control-btn">
+                                <span class="icons">
+                                    <svg class="svg-ico pause-ico" viewBox="0 0 56 56">
+                                        <path d="M23.9,38.5h-2.3c-1.3,0-2.3-1-2.3-2.2V19.7c0-1.3,1.1-2.3,2.3-2.2h2.3c1.3,0,2.3,1,2.3,2.2v16.5 C26.2,37.5,25.2,38.5,23.9,38.5 M34.4,38.5c1.3,0,2.3-1,2.3-2.2V19.7c0-1.3-1.1-2.3-2.3-2.2h-2.3c-1.3,0-2.3,1-2.3,2.2v16.5 c0,1.3,1.1,2.3,2.3,2.2H34.4z"></path>
+                                    </svg>
+                                    <!-- <svg class="svg-ico play-ico" viewBox="0 0 56 56">
+                                        <path d="M20.8,36V20c0-1.6,1-2.5,2.3-2.5c0.7,0,1.1,0.1,1.7,0.5l13.4,7.7c1.2,0.7,1.8,1.2,1.8,2.3 c0,1.1-0.6,1.6-1.8,2.3L24.8,38c-0.6,0.4-1,0.5-1.7,0.5C21.8,38.5,20.8,37.6,20.8,36"></path>
+                                    </svg> -->
+                                    <!-- <svg class="svg-ico replay-ico" viewBox="0 0 56 56">
+                                        <path d="M37.3,26.7c-1,0.1-1.8,1-1.8,2c0,4.1-3.4,7.4-7.5,7.4c-4.1,0-7.4-3.4-7.4-7.5c0-4.1,3.3-7.4,7.5-7.4l0.1,0l0.2,0l0.5,0 l-2.2,2.2c-0.8,0.8-0.8,2.1,0,2.9c0.7,0.7,1.9,0.8,2.7,0.2l0.2-0.2l5.3-5.3c0.7-0.7,0.8-1.9,0.2-2.7l-0.2-0.2l-5.3-5.3 c-0.8-0.8-2.1-0.8-2.8,0c0,0,0,0,0,0c-0.7,0.7-0.8,1.9-0.1,2.7l0.1,0.2l1.4,1.4l-0.5,0c-6.4,0.2-11.3,5.6-11.1,11.9 S22,40.5,28.4,40.2c6.2-0.2,11.1-5.3,11.1-11.5c0-1-0.8-1.9-1.8-2l-0.2,0L37.3,26.7z"></path>
+                                    </svg> -->
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide-wrap ">
+                    <div class="swiper highlights-slide">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide swiper-slide01">
+                                <p class="slide-text slide-title">All-new pro design. Incredibly portable. The thinnest<br />Apple product ever.</p>
+                                <p class="slide-text desc-txt01">5.1 mm</p>
+                                <p class="slide-text desc-txt02">13-inch model</p>
+                                <img src="./assets/images/design__kk16tmcuw5me_large.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide swiper-slide02">
+                                <p class="slide-text slide-title">Ultra Retina XDR. The world’s most advanced display.<br />Extreme brightness and precise contrast.</p>
+                                <img src="./assets/images/display__bzsf7o4nhfiq_large.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide swiper-slide03">
+                                <p class="slide-text slide-title">Introducing the Apple M4 chip.<br />Outrageous performance, game-<br />changing graphics, and powerful<br />AI capabilities.</p>
+                                <img src="./assets/images/chip__fj2i2rsn8jee_large.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide swiper-slide04">
+                                <p class="slide-text slide-title">Crush pro workflows
+                                    <br />with the ease of iPadOS
+                                    <br />and amazing apps.</p>
+                                <div class="img-area">
+                                    <img src="./assets/images/ipados_hw__eyfh2cbzt3o2_large.png" alt="" class="img01">
+                                    <img src="./assets/images/ipados_endframe__du34nxba25w2_large.jpg" alt="" class="img02">
+                                    <video playsinline="" muted="" autoplay>
+                                        <source src="https://www.apple.com/105/media/us/ipad-pro/2024/97d7edf3-aac0-443d-9731-38d40ff50951/anim/ipados/large.mp4" type="video/mp4/">
+                                    </video>
+                                </div>
+                            </div>
+                            <div class="swiper-slide swiper-slide05">
+                                <p class="slide-text slide-title">All-new Apple Pencil Pro.
+                                    <br />New features for next-level creativity.1</p>
+                                <img src="./assets/images/pencil_endframe__ejnchjpy3dkm_large.jpg" alt="">
+                                <video playsinline="" muted="">
+                                    <source src="https://www.apple.com/105/media/us/ipad-pro/2024/97d7edf3-aac0-443d-9731-38d40ff50951/anim/pencil/large.mp4" type="video/mp4/">
+                                </video>
+                            </div>
+                            <div class="swiper-slide swiper-slide06">
+                                <p class="slide-text slide-title">Redesigned, thinner Magic Keyboard.
+                                    <br />Comfortable typing and haptic trackpad experience.1</p>
+                                <img src="./assets/images/keyboard__41pqaa0d5k2i_large.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="sc-look sc-slide rel">
+                
+                <div class="title-wrap inner">
+                    <h2 class="sect-headline">Take a closer look.</h2>
+                </div>
+               
+                <div class="slide-wrap">
+                    <div class="swiper look-slide">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide swiper-slide01">
+                                <div class="img-group">
+                                    <picture id="" class="space-black" aria-label="" role="img" >
+                                        <img src="./assets/images/slide_1A__cxvssgdj2v6u_large.jpg" alt="">
+                                    </picture>
+                                    <picture id="" class="silver" aria-label="" role="img">
+                                        <img src="./assets/images/slide_1A__cxvssgdj2v6u_large (1).jpg" alt="">
+                                    </picture>
+                                </div>
+                                <div class="img-group">
+                                    <picture id="" class="space-black" aria-label="" role="img" >
+                                        <img src="./assets/images/slide_1B__dgpmmatbtrwy_large.jpg" alt="">
+                                    </picture>
+                                    <picture id="" class="silver" aria-label="" role="img">
+                                        <img src="./assets/images/slide_1B__dgpmmatbtrwy_large (1).jpg" alt="">
+                                    </picture>
+                                </div>
+                            </div>
+                            <div class="swiper-slide swiper-slide02">
+                                <div class="img-group">
+                                    <picture id="" class="space-black" aria-label="" role="img" >
+                                        <img src="./assets/images/slide_2A__fys53o1sux26_large.jpg" alt="">
+                                    </picture>
+                                    <picture id="" class="silver" aria-label="" role="img">	
+                                        <img src="./assets/images/slide_2A__fys53o1sux26_large (1).jpg" alt="">
+                                    </picture>
+                                </div>
+                            </div>
+                            <div class="swiper-slide swiper-slide03">
+                                <div class="img-group">
+                                    <picture id="" class="space-black" aria-label="" role="img" >
+                                        <img src="./assets/images/slide_3A__fmel0mesnxqq_large.jpg" alt="">
+                                    </picture>
+                                    <picture id="" class="silver" aria-label="" role="img" >
+                                        <img src="./assets/images/slide_3A__fmel0mesnxqq_large (1).jpg" alt="">
+                                    </picture>
+                                </div>
+                                <div class="img-group">
+                                    <picture id="" class="space-black" aria-label="" role="img" >
+                                        <img src="./assets/images/slide_3B__ghzt16liu1ay_large.jpg" alt="">
+                                    </picture>
+                                    <picture id="" class="silver"  aria-label="" role="img">
+                                        <img src="./assets/images/slide_3B__ghzt16liu1ay_large (1).jpg"  alt="">
+                                    </picture>
+                                </div>
+                            </div>
+                            <div class="swiper-slide swiper-slide04">
+                            <div class="img-group">
+                                <picture id="" class="space-black" aria-label="" role="img" >
+                                    <img src="./assets/images/slide_4A__c2suhzbfcl8i_large.jpg" alt="">
+                                </picture>
+                                <picture id=""" class="silver" aria-label="" role="img" >
+                                    <img src="./assets/images/slide_4A__c2suhzbfcl8i_large (1).jpg" alt="">
+                                </picture>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="swiper-control-wrap inner">
+                        <div class="btn-group">
+                            <button aria-label="Previous" class="swiper-button-prev prev-btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36">
+                                    <path d="M21.559,12.062 L15.618,17.984 L21.5221,23.944 C22.105,24.533 22.1021,25.482 21.5131,26.065 C21.2211,26.355 20.8391,26.4999987 20.4571,26.4999987 C20.0711,26.4999987 19.6851,26.352 19.3921,26.056 L12.4351,19.034 C11.8531,18.446 11.8551,17.4999987 12.4411,16.916 L19.4411,9.938 C20.0261,9.353 20.9781,9.354 21.5621,9.941 C22.1471,10.528 22.1451,11.478 21.5591,12.062 L21.559,12.062 Z"></path>
+                                </svg>
+                            </button>
+                            <button aria-label="Next" class="swiper-button-next next-btn" >
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36">
+                                    <path d="M23.5587,16.916 C24.1447,17.4999987 24.1467,18.446 23.5647,19.034 L16.6077,26.056 C16.3147,26.352 15.9287,26.4999987 15.5427,26.4999987 C15.1607,26.4999987 14.7787,26.355 14.4867,26.065 C13.8977,25.482 13.8947,24.533 14.4777,23.944 L20.3818,17.984 L14.4408,12.062 C13.8548,11.478 13.8528,10.5279 14.4378,9.941 C15.0218,9.354 15.9738,9.353 16.5588,9.938 L23.5588,16.916 L23.5587,16.916 Z"></path>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>                    
+                </div>
+                 <div class="access-wrap">
+                    <div class="color-control">
+                        <div class="control-wrap">
+                            <button class="color-btn black-btn on">
+                                <span class="color-name">Space Black</span>
+                                <span class="color-circle"></span>
+                            </button>
+                            <button class="color-btn silver-btn">
+                                <span class="color-name">Silver</span>
+                                <span class="color-circle"></span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="sc-explore rel" data-pagination="true">
+                <div class="inner">
+                    <h2 class="sect-headline">Explore the full story.</h2>
+                </div>
+                <div class="access-wrap">
+                    <div class="popup-btn-area">
+                        <button class="popup-btn">
+                            <span class="btn-text">Dive into materials and design</span>
+                            <span class="btn-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36">
+                                    <path id="_art" class="st1" d="M25.5,16.5l-5.9,0l0-5.9C19.6,9.7,18.9,9,18,9c-0.9,0-1.5,0.7-1.5,1.5l0,5.9l-5.9,0h0
+                                      C9.7,16.4,9,17.1,9,18c0,0.9,0.7,1.5,1.5,1.5l5.9,0l0,5.9c0,0.9,0.7,1.5,1.5,1.5c0.9,0,1.5-0.7,1.5-1.5l0-5.9l5.9,0h0
+                                      c0.9,0,1.5-0.7,1.5-1.5C27,17.2,26.3,16.5,25.5,16.5L25.5,16.5z"></path>
+                                </svg>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+                <div class="explore-content">
+                    <h3 class="sect-title tac">Thrill. Sleeker.</h3>
+                    <div class="desc-area">
+                        <p class="desc">
+                            The all-new iPad Pro packs astonishing power into an unbelievably thin, light, and portable design. 
+                            Push the limits of what’s possible on iPad with a superportable 11-inch model and an expansive 13-inch model that is 
+                            <span class="highlight"><em>the thinnest product Apple has ever created</em></span>.
+                        </p>
+                        <div class="media">
+                            <p class="media-caption">
+                                5.1 mm <br>
+                                <span class="sub-media-caption">thin and light design<sup class="footnote footnote-number"><a href="">2</a></sup></span>
+                            </p>
+                            <div class="media-video">
+                                <div class="video-wrapper">
+                                    <!-- <video id="design-video" preload="none" default="" role="img" muted="" playsinline="" data-inline-media="" data-inline-media-basepath="/105/media/us/ipad-pro/2024/97d7edf3-aac0-443d-9731-38d40ff50951/anim/design-hero/" data-inline-media-plugins="AnimLoad,AnimPlayOnce,ViewportSourceOnce,ObjectFitFix,UnloadVideo" data-retina-enabled="true" data-inline-media-load-keyframe="{ &quot;start&quot;: &quot;a0t - 150vh&quot;, &quot;end&quot;: &quot;a0b&quot;, &quot;disabledWhen&quot;: &quot;no-enhanced&quot;, &quot;anchors&quot;: &quot;.subsection-design&quot;}" data-inline-media-play-keyframe="{ &quot;start&quot;: &quot;a0t&quot;, &quot;end&quot;: &quot;a0b&quot;, &quot;disabledWhen&quot;: &quot;no-enhanced&quot;, &quot;anchors&quot;: &quot;.subsection-design&quot;}" data-inline-media-reset-keyframe="{ &quot;start&quot;: &quot;a0t - 150vh&quot;, &quot;end&quot;: &quot;a0b&quot;, &quot;disabledWhen&quot;: &quot;no-enhanced&quot;, &quot;anchors&quot;: &quot;.subsection-design&quot;}" data-inline-media-mime-types="quicktime, webm, mov" aria-label="Animation of an iPad Pro with a colorful display turning to the side, held by the user's thumb and pointer finger, portraying how thin the design is" src="/105/media/us/ipad-pro/2024/97d7edf3-aac0-443d-9731-38d40ff50951/anim/design-hero/large.webm">
+                                    </video> -->
+                                    <picture id="" class="" aria-label="" >                                     
+                                        <img src="./assets/images/design_hero_endframe__cekovnm6qq82_large.png"  alt="">
+                                    </picture>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>				
+            </section>
+
+            <section class="sc-display rel" data-pagination="true">
+                <div class="w980">
+                    <h2 class="sect-title tac">The world’s most<br/>advanced display.</h2>
+                    <div class="video-wrap">
+                        <video playsinline="" autoplay muted>
+                            <source src="https://www.apple.com/105/media/us/ipad-pro/2024/97d7edf3-aac0-443d-9731-38d40ff50951/anim/display-hero/large.mp4" type="video/mp4">
+                        </video>
+                        <p class="atv-caption">
+                            <a href="" class="icon-wrapper" >
+                                <span class="icon-copy">Stream <cite>Constellation</cite> on Apple&nbsp;TV+</span>
+                            </a>
+                        </p>
+                    </div>
+                    <div class="desc-wrap">
+                        <p class="desc">The new Ultra Retina XDR display introduces groundbreaking tandem OLED technology. 
+                            Extreme brightness, incredibly precise contrast, and advanced technologies like ProMotion and 
+                            True Tone give you a <span class="highlight"><em>jaw-dropping visual experience</em></span>. 
+                            And you can use Reference Mode for color-accurate workflows.
+                        </p>
+                    </div>
+                    <ul role="list" class="display-list">
+                        <li role="listitem" class="display-item">
+                            <div class="stat-area">
+                                <p class="stat-title stat-title01">1000 nits</p>
+                                <p class="stat-sub">full-screen brightness</p>
+                            </div>
+                        </li>
+                        <li role="listitem" class="display-item">
+                            <div class="stat-area">
+                                <p class="stat-title stat-title02">1600 nits</p>
+                                <p class="stat-sub">peak HDR brightness</p>
+                            </div>
+                        </li>
+                        <li role="listitem" class="display-item">
+                            <div class="stat-area">
+                                <p class="stat-title stat-title03">2,000,000:1</p>
+                                <p class="stat-sub">contrast ratio</p>
+                            </div>
+                        </li>
+                        <li role="listitem" class="display-item">
+                            <div class="stat-area">
+                                <p class="stat-title stat-title04">True Tone</p>
+                                <p class="stat-sub">for comfortable viewing</p>
+                            </div>
+                        </li>
+                        <li role="listitem" class="display-item">
+                            <div class="stat-area">
+                                <p class="stat-title stat-title05">ProMotion</p>
+                                <p class="stat-sub">adaptive 10-120Hz refresh rate</p>
+                            </div>
+                        </li>
+                        <li role="listitem" class="display-item">
+                            <div class="stat-area">
+                                <p class="stat-title stat-title06">P3</p>
+                                <p class="stat-sub">wide color</p>
+                            </div>
+                        </li>
+                        
+                    </ul>
+                    <div class="access-wrap">
+                        <div class="popup-btn-area">
+                            <button class="popup-btn">
+                                <span class="btn-text">Immerse yourself in Ultra Retina XDR</span>
+                                <span class="btn-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36">
+                                        <path id="_art" class="st1" d="M25.5,16.5l-5.9,0l0-5.9C19.6,9.7,18.9,9,18,9c-0.9,0-1.5,0.7-1.5,1.5l0,5.9l-5.9,0h0
+                                        C9.7,16.4,9,17.1,9,18c0,0.9,0.7,1.5,1.5,1.5l5.9,0l0,5.9c0,0.9,0.7,1.5,1.5,1.5c0.9,0,1.5-0.7,1.5-1.5l0-5.9l5.9,0h0
+                                        c0.9,0,1.5-0.7,1.5-1.5C27,17.2,26.3,16.5,25.5,16.5L25.5,16.5z"></path>
+                                    </svg>
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="sc-m4 rel" data-pagination="true">
+                <div class="sticky-wrapper">
+                    <div class="sticky">
+                        <video playsinline="" muted="" autoplay loop class="m4-video">
+                            <source src="https://www.apple.com/105/media/us/ipad-pro/2024/97d7edf3-aac0-443d-9731-38d40ff50951/anim/m4-chip/large.mp4" type="video/mp4">
+                        </video>
+                        <div class="m4-text">
+                            <div class="bg"></div>
+                            <svg class="mask-text" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1920 1080"  xml:space="preserve">
+                                <g>
+                                <g>
+                                    <path d="M1364.68,484.97c-6.48,10.3-13,20.64-19.56,31.01c-6.56,10.37-13.11,20.74-19.66,31.11
+                                    c-6.56,10.37-13.11,20.71-19.66,31.01c-6.56,10.3-13.07,20.64-19.56,31.01v1.73h99.4V453.96h-1.51
+                                    C1377.65,464.33,1371.16,474.67,1364.68,484.97z"></path>
+                                </g>
+                                <g>
+                                    <path d="M0,0v1080h1920V0H0z M614.8,351.95c4.86-10.55,10.37-19.29,16.53-26.2c7.85-9.34,17.75-17.09,29.7-23.26
+                                    c11.95-6.17,23.35-9.43,34.19-9.81c0.56,2.43,0.84,5.32,0.84,8.69c0,11.21-2.15,22.09-6.44,32.65
+                                    c-4.3,10.56-9.81,19.94-16.53,28.16c-7.29,8.78-16.44,16.12-27.46,22c-11.02,5.88-21.48,8.83-31.39,8.83
+                                    c-2.06,0-4.02-0.18-5.88-0.56c-0.19-0.56-0.38-1.59-0.56-3.08c-0.19-1.49-0.28-3.08-0.28-4.77
+                                    C607.51,373.39,609.94,362.51,614.8,351.95z M778.59,631.48c-4.58,12.52-12.1,26.44-22.56,41.76
+                                    c-9.16,13.27-19.01,25.5-29.57,36.71c-10.56,11.21-23.21,16.81-37.97,16.81c-9.9,0-18.03-1.45-24.38-4.34
+                                    c-6.35-2.9-12.89-5.79-19.62-8.69c-6.73-2.89-15.79-4.34-27.18-4.34c-11.03,0-20.23,1.5-27.6,4.48
+                                    c-7.38,2.99-14.39,5.98-21.02,8.97c-6.63,2.99-14.43,4.48-23.4,4.48c-13.64,0-25.6-5.42-35.87-16.25
+                                    c-10.28-10.83-20.83-23.82-31.67-38.95c-12.52-17.94-23.22-39.84-32.09-65.72c-8.87-25.87-13.31-51.98-13.31-78.32
+                                    c0-28.21,5.32-51.89,15.97-71.04c10.65-19.15,24.33-33.63,41.05-43.43c16.72-9.81,34.05-14.71,51.98-14.71
+                                    c9.53,0,18.49,1.54,26.9,4.62c8.41,3.08,16.3,6.21,23.68,9.39c7.38,3.18,14.06,4.77,20.04,4.77c5.79,0,12.51-1.68,20.18-5.05
+                                    c7.66-3.36,16.25-6.68,25.78-9.95c9.53-3.27,19.71-4.91,30.55-4.91c4.11,0,11.11,0.66,21.02,1.96c9.9,1.31,20.78,5,32.65,11.07
+                                    c11.86,6.07,22.65,16.11,32.37,30.12c-0.56,0.56-3.27,2.57-8.13,6.03c-4.86,3.46-10.28,8.5-16.25,15.13
+                                    c-5.98,6.63-11.21,15.04-15.69,25.22c-4.48,10.18-6.73,22.28-6.73,36.29c0,16.07,2.85,29.7,8.55,40.91
+                                    c5.7,11.21,12.33,20.22,19.9,27.04c7.57,6.82,14.29,11.82,20.18,14.99c5.88,3.18,9.01,4.86,9.39,5.04
+                                    C785.55,612.33,783.17,618.97,778.59,631.48z M1182.41,718.44h-58.34V507.77h-1.69l-84.09,210.68h-41.06l-84.09-210.68h-1.91
+                                    v210.68h-58.13v-311.8h75.41l88.59,224.07h1.3l88.38-224.07h75.63V718.44z M1487.63,661.4h-41.05v57.05h-62.23V661.4h-154.93
+                                    v-54.67c8.21-13.25,16.49-26.58,24.85-39.97c8.35-13.4,16.71-26.76,25.06-40.08c8.35-13.32,16.71-26.65,25.06-39.97
+                                    c8.35-13.32,16.71-26.68,25.06-40.08c8.35-13.4,16.64-26.72,24.85-39.97h92.26v202.47h41.05V661.4z"></path>
+                                </g>
+                                </g>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-content">
+                    <div class="cont-wrap">
+                        <h2 class="sect-title">Rocket chip.</h2>
+                        <div class="desc-wrap flex-sa">
+                            <div class="col-left col-2">
+                                <p class="desc desc-text">Introducing 
+                                    <em class="highlight">M4, the next generation of Apple silicon</em>, 
+                                    delivering outrageous performance in the exceptionally thin and light design of iPad Pro. 
+                                    An entirely new display engine enables stunning precision, color, and brightness. 
+                                    A powerful GPU with hardware-accelerated ray tracing renders game-changing graphics. 
+                                    And the Neural Engine in M4 makes iPad Pro an absolute powerhouse for AI.
+                                </p>
+                            </div>
+                            <div class="col-right col-2 desc-text">
+                                <p class="caption">
+                                    Up to <strong>4x faster</strong> pro rendering performance than M2<sup class="footnote footnote-number"><a href="">3</a></sup>
+                                </p>
+                                <p class="caption">
+                                    Up to <strong>1.5x faster</strong> CPU performance than M2<sup class="footnote footnote-number"><a href="" >4</a></sup>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="access-wrap">
+                    <div class="popup-btn-area">
+                        <button class="popup-btn">
+                            <span class="btn-text">Learn how M4 powers performance</span>
+                            <span class="btn-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36">
+                                    <path id="_art" class="st1" d="M25.5,16.5l-5.9,0l0-5.9C19.6,9.7,18.9,9,18,9c-0.9,0-1.5,0.7-1.5,1.5l0,5.9l-5.9,0h0
+                                    C9.7,16.4,9,17.1,9,18c0,0.9,0.7,1.5,1.5,1.5l5.9,0l0,5.9c0,0.9,0.7,1.5,1.5,1.5c0.9,0,1.5-0.7,1.5-1.5l0-5.9l5.9,0h0
+                                    c0.9,0,1.5-0.7,1.5-1.5C27,17.2,26.3,16.5,25.5,16.5L25.5,16.5z"></path>
+                                </svg>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+            <section class="sc-Workflow rel" data-pagination="true">
+                <div class="w980">
+                    <div class="title-wrap">
+                        <h2 class="sect-title">iPadOS and apps.<br/>Workflow workhorses.</h2>
+                    </div>
+                </div>
+                <div class="video-wrap">
+                    <video playsinline="" muted="" autoplay  class="m4-video">
+                        <source src="https://www.apple.com/105/media/us/ipad-pro/2024/97d7edf3-aac0-443d-9731-38d40ff50951/anim/pro-apps/large.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="w980">
+                    <div class="desc-wrap flex-sa ">
+                        <p class="col-left col-2 desc-text">iPadOS is designed to let you power through advanced workflows and <em class="highlight">do all the things you love</em> with ease and simplicity. Run pro apps, play high-performance games, and take on creative projects of any size with an intuitive touch-first experience.</p>
+                        <p class="col-right col-2"><em class="highlight">Shown above</em>: Stage Manager, Final Cut Pro for iPad, Procreate Dreams, Octane X, Logic Pro for iPad, Procreate, Freeform, Morpholio Trace, Photos, Shapr3D</p>
+                    </div>
+                </div>
+                <div class="access-wrap">
+                    <div class="popup-btn-area">
+                        <button class="popup-btn">
+                            <span class="btn-text">Explore what you can do on iPad</span>
+                            <span class="btn-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36">
+                                    <path id="_art" class="st1" d="M25.5,16.5l-5.9,0l0-5.9C19.6,9.7,18.9,9,18,9c-0.9,0-1.5,0.7-1.5,1.5l0,5.9l-5.9,0h0
+                                    C9.7,16.4,9,17.1,9,18c0,0.9,0.7,1.5,1.5,1.5l5.9,0l0,5.9c0,0.9,0.7,1.5,1.5,1.5c0.9,0,1.5-0.7,1.5-1.5l0-5.9l5.9,0h0
+                                    c0.9,0,1.5-0.7,1.5-1.5C27,17.2,26.3,16.5,25.5,16.5L25.5,16.5z"></path>
+                                </svg>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="sc-pencilpro rel">
+                <div class="w980">
+                    <div class="title-wrap">
+                        <h2 class="sect-title tac">Apple Pencil Pro.<br/>Engineered for<br/>limitless creativity.</h2>
+                    </div>
+                    <div class="video-wrap">
+                        <video playsinline="" muted="" autoplay  class="m4-video">
+                            <source src="https://www.apple.com/105/media/us/ipad-pro/2024/97d7edf3-aac0-443d-9731-38d40ff50951/anim/pencil-pro/large.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="desc-wrap">
+                        <p class="desc-text tac">Apple Pencil sets the standard for how drawing, painting, handwriting, and note-taking should feel — intuitive, precise, and magical. All with pixel‑perfect precision, low latency, tilt sensitivity, and support for palm rejection. The <em class="highlight">all-new Apple Pencil Pro</em> adds even more capabilities to bring your ideas to life like never before.<sup class="footnote footnote-number"><a href="">1</a></sup></p>
+                        <a href="" class="link-btn tac">Explore more Apple Pencil features <span class="icon icon-after icon-arrow"></span></a>
+                    </div>
+                </div>
+                <div class="access-wrap">
+                    <div class="popup-btn-area">
+                        <button class="popup-btn">
+                            <span class="btn-text">View Apple Pencil Pro in action</span>
+                            <span class="btn-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36">
+                                    <path id="_art" class="st1" d="M25.5,16.5l-5.9,0l0-5.9C19.6,9.7,18.9,9,18,9c-0.9,0-1.5,0.7-1.5,1.5l0,5.9l-5.9,0h0
+                                    C9.7,16.4,9,17.1,9,18c0,0.9,0.7,1.5,1.5,1.5l5.9,0l0,5.9c0,0.9,0.7,1.5,1.5,1.5c0.9,0,1.5-0.7,1.5-1.5l0-5.9l5.9,0h0
+                                    c0.9,0,1.5-0.7,1.5-1.5C27,17.2,26.3,16.5,25.5,16.5L25.5,16.5z"></path>
+                                </svg>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </section>
+            <section class="sc-magickb rel">
+                <div class="w980">
+                    <div class="title-wrap">
+                        <h2 class="sect-title">Magic Keyboard.<br/>Innovation is key.</h2>
+                    </div>
+                    <div class="desc-wrap">
+                        <p class="desc-text">Magic&nbsp;Keyboard delivers an amazing typing and trackpad experience in a <em class="highlight">sleek, portable new design</em> with an aluminum palm rest.<sup class="footnote footnote-number"><a href="">1</a></sup> The keyboard includes a function row and a larger glass trackpad with haptic feedback for precise work and Multi‑Touch gestures.</p>
+                        <a href="" class="link-btn">Learn more about keyboards for iPad <span class="icon icon-after icon-arrow"></span></a>
+                    </div>
+                    <div class="video-wrap">
+                        <video playsinline="" muted="" autoplay  class="m4-video">
+                            <source src="https://www.apple.com/105/media/us/ipad-pro/2024/97d7edf3-aac0-443d-9731-38d40ff50951/anim/magic-keyboard/large.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+                <div class="access-wrap">
+                    <div class="popup-btn-area">
+                        <button class="popup-btn">
+                            <span class="btn-text">Tap into the new Magic Keyboard</span>
+                            <span class="btn-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36">
+                                    <path id="_art" class="st1" d="M25.5,16.5l-5.9,0l0-5.9C19.6,9.7,18.9,9,18,9c-0.9,0-1.5,0.7-1.5,1.5l0,5.9l-5.9,0h0
+                                    C9.7,16.4,9,17.1,9,18c0,0.9,0.7,1.5,1.5,1.5l5.9,0l0,5.9c0,0.9,0.7,1.5,1.5,1.5c0.9,0,1.5-0.7,1.5-1.5l0-5.9l5.9,0h0
+                                    c0.9,0,1.5-0.7,1.5-1.5C27,17.2,26.3,16.5,25.5,16.5L25.5,16.5z"></path>
+                                </svg>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </section>
+            <section class="sc-camera rel">
+                <div class="w980 flex-sa">
+                    <div class="title-wrap col-2">
+                        <h2 class="sect-title">Mics. Cameras. Action.</h2>
+                    </div>
+                    <div class="desc-wrap col-2">
+                        <p class="desc-text"><em class="highlight">Shoot, edit, and share all on one device</em> with a pro camera system with LiDAR Scanner, studio-quality mics, and four speakers. Capture 4K ProRes video, hop on a video call with the new landscape front camera, and take dramatically better document scans enhanced by AI.</p>
+                    </div>
+                </div>
+                <div class="bg-wrap">
+                    <div class="video-wrap">
+                        <video playsinline="" muted="" autoplay  class="m4-video">
+                            <source src="https://www.apple.com/105/media/us/ipad-pro/2024/97d7edf3-aac0-443d-9731-38d40ff50951/anim/cameras-hero/large.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+                <div class="w980 pb200">
+                    <ul role="list" class="feature-list">
+						<li role="listitem" class="feature">
+							<div class="desc-img">
+                                <img src="./assets/images/ipadpro13_gen7_camera__i9tftpwpgaeu_large.png" alt="">
+							</div>
+							<p class="desc-text"><em class="highlight">12MP Wide camera</em> with adaptive True Tone flash.</p>
+						</li>
+                        <li role="listitem" class="feature">
+                            <div class="">
+                                <img src="./assets/images/ipad_front_camera_landscape__5f0z6qnm4duu_large.png" alt="">                             
+							</div>
+							<p class="desc-text"><em class="highlight">Landscape 12MP Ultra Wide camera</em> with support for Center&nbsp;Stage.</p>
+						</li>
+                        <li role="listitem" class="feature">
+							<div class="">									
+                                <img src="./assets/images/waveform__d358xw5dz926_large.png" alt="">
+							</div>
+							<p class="desc-text"><em class="highlight">Studio-quality mics</em> for great video calls.</p>
+						</li>
+                        <li role="listitem" class="feature">
+							<div class="">									
+                                <img src="./assets/images/speaker_wave_2__cwqultenqc6e_large.png" alt="">
+							</div>
+							<p class="desc-text"><em class="highlight">Four-speaker sound system</em> for rich audio.</p>
+						</li>
+					</ul>
+                </div>
+                <div class="access-wrap">
+                    <div class="popup-btn-area">
+                        <button class="popup-btn">
+                            <span class="btn-text">Explore the camera system</span>
+                            <span class="btn-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36">
+                                    <path id="_art" class="st1" d="M25.5,16.5l-5.9,0l0-5.9C19.6,9.7,18.9,9,18,9c-0.9,0-1.5,0.7-1.5,1.5l0,5.9l-5.9,0h0
+                                    C9.7,16.4,9,17.1,9,18c0,0.9,0.7,1.5,1.5,1.5l5.9,0l0,5.9c0,0.9,0.7,1.5,1.5,1.5c0.9,0,1.5-0.7,1.5-1.5l0-5.9l5.9,0h0
+                                    c0.9,0,1.5-0.7,1.5-1.5C27,17.2,26.3,16.5,25.5,16.5L25.5,16.5z"></path>
+                                </svg>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </section>
+            <section class="sc-connect rel">
+                <div class="">
+                    <div class="title-wrap">
+                        <h2 class="sect-title tac">Dream big.<br/>Connect fast.</h2>
+                    </div>
+                    <div class="img-wrap">
+                        <img src="./assets/images/external_display__brvese6ldr8i_large.jpg" alt="" class="bg-img">                        
+                        <img src="./assets/images/external_display_cord__k0hjnkzn132u_large.png" alt="" class="img03">
+                        <img src="./assets/images/external_display_monitor__fzzixxgqc2qa_large.png" alt="" class="img01">
+                        <img src="./assets/images/external_display_ipad__b7h0clh83vaq_large.png" alt="" class="img02">    
+                    </div>
+                    <div class="desc-wrap flex-sa w980 pb200">
+                        <div class="col-left col-2">
+                            <p class="desc desc-text">
+                                Pro connectivity adds a whole new dimension of versatility to iPad Pro. <em class="highlight">Drive high-resolution external displays</em> up to 6K and connect to storage devices with Thunderbolt. And stay connected wherever you are with blazing-fast Wi-Fi 6E and 5G capabilities.<sup class="footnote footnote-number"><a href="">8</a></sup>
+                            </p>
+                        </div>
+                        <div class="col-right col-2 desc-text">
+                            <p class="caption">
+                                Up to <strong>40Gb/s</strong> data transfer speeds
+                            </p>
+                            <p class="caption">
+                                <strong>Wi-Fi 6E</strong>
+                            </p>
+                            <p class="caption">
+                                <strong>5G</strong>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="access-wrap">
+                    <div class="popup-btn-area">
+                        <button class="popup-btn">
+                            <span class="btn-text">Stay connected like a pro</span>
+                            <span class="btn-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36">
+                                    <path id="_art" class="st1" d="M25.5,16.5l-5.9,0l0-5.9C19.6,9.7,18.9,9,18,9c-0.9,0-1.5,0.7-1.5,1.5l0,5.9l-5.9,0h0
+                                    C9.7,16.4,9,17.1,9,18c0,0.9,0.7,1.5,1.5,1.5l5.9,0l0,5.9c0,0.9,0.7,1.5,1.5,1.5c0.9,0,1.5-0.7,1.5-1.5l0-5.9l5.9,0h0
+                                    c0.9,0,1.5-0.7,1.5-1.5C27,17.2,26.3,16.5,25.5,16.5L25.5,16.5z"></path>
+                                </svg>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </section>
+            <section class="sc-design rel">
+                <div class="inner">
+                    <div class="title-wrap">
+                        <h2 class="sect-title text-gradient">Designed to make<br/>a difference.</h2>
+                    </div>
+                    <div class="desc-wrap">
+                        <h2 class="desc-text">What matters to you matters to Apple, too. From using more recycled materials that minimize environmental impact. To privacy protections that give you more control over your data. To creating built‑in features that make iPad accessible to all.</h2>
+                    </div>
+                    <ul class="values-list">
+                        <li class="values-item">
+                            <div class="img-wrap">
+                                <img src="./assets/images/environment__chmijbryc2aa_large.png" alt="">
+                            </div>
+                            <div class="text-wrap">
+                                <p class="desc-text">The new iPad Pro has a durable design that uses <em class="highlight">100 percent recycled aluminum in the enclosure.</em></p>
+                            </div>
+                        </li>
+                        <li class="values-item">
+                            <div class="img-wrap">
+                                <img src="./assets/images/privacy__e6zpf184twk2_large.png" alt="">
+                            </div>
+                            <div class="text-wrap">
+                                <p class="desc-text"><em class="highlight">Privacy is a fundamental human right.</em> Which is why we design our products and services to protect it.</p>
+                            </div>
+                        </li>
+                        <li class="values-item">
+                            <div class="img-wrap">
+                                <img src="./assets/images/accessibility__gip8f5qxcy2q_large.png" alt="">
+                            </div>
+                            <div class="text-wrap">
+                                <p class="desc-text">The best technology works for everyone. That’s why our products and services are <em class="highlight">inclusive by design.</em></p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="access-wrap">
+                    <div class="popup-btn-area">
+                        <button class="popup-btn">
+                            <span class="btn-text">Stay connected like a pro</span>
+                            <span class="btn-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36">
+                                    <path id="_art" class="st1" d="M25.5,16.5l-5.9,0l0-5.9C19.6,9.7,18.9,9,18,9c-0.9,0-1.5,0.7-1.5,1.5l0,5.9l-5.9,0h0
+                                    C9.7,16.4,9,17.1,9,18c0,0.9,0.7,1.5,1.5,1.5l5.9,0l0,5.9c0,0.9,0.7,1.5,1.5,1.5c0.9,0,1.5-0.7,1.5-1.5l0-5.9l5.9,0h0
+                                    c0.9,0,1.5-0.7,1.5-1.5C27,17.2,26.3,16.5,25.5,16.5L25.5,16.5z"></path>
+                                </svg>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </section>
+            <section class="sc-why">
+                <div class="inner">
+                    <div class="title-wrap">
+                        <h2 class="sect-headline2">Why Apple is the best<br/>place to buy iPad</h2>
+                        <a href="" class="link-btn">Shop iPad <span class="icon icon-after icon-arrow"></span></a>
+                    </div>
+                    <div class="slide-wrap rel">
+                        <div class="swiper why-slide">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="icon-card-content">
+                                        <div class="icon-container">
+                                            <img src="./assets/images/icon_creditcard__b0kr1fahry1y_large.png" alt="">
+                                        </div>
+                                        <div class="text-container">
+                                            <h3 class="text-title">Pay over time, interest‑free.</h3>
+                                            <p class="text-desc">When you choose to check out with Apple&nbsp;Card Monthly Installments.<sup class="footnote footnote-diamond"><a href="#footnote-3" aria-label="Footnote ◊ symbol" data-modal-close="">◊</a></sup></p>
+                                        </div>
+                                    </div>
+                                    <button class="popup-btn">
+                                        <div class="ico-wrap">
+                                            <svg class="popup-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                                                <path d="M17.25,8.51H11.5V2.75A1.5,1.5,0,0,0,10,1.25h0a1.5,1.5,0,0,0-1.5,1.5V8.5H2.75a1.5,1.5,0,0,0,0,3H8.5v5.75a1.5,1.5,0,0,0,1.5,1.5h0a1.5,1.5,0,0,0,1.5-1.5V11.5h5.75a1.5,1.5,0,0,0,0-3Z"></path>
+                                            </svg>
+                                        </div>
+                                    </button>
+                                </div>
+                                <div class="swiper-slide ">
+                                    <div class="icon-card-content">
+                                        <div class="icon-container">
+                                            <img src="./assets/images/icon_arrow_2_squarepath_devices__bayjqqtded1e_large.png" alt="">
+                                        </div>
+                                        <div class="text-container">
+                                            <h3 class="text-title">Save up to $565</span> with Apple Trade In.</h3>
+                                            <p class="text-desc">Get credit toward your next iPad when you trade in an eligible device.</p>
+                                        </div>
+                                    </div>
+                                    <button class="popup-btn">
+                                        <div class="ico-wrap">
+                                            <svg class="popup-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                                                <path d="M17.25,8.51H11.5V2.75A1.5,1.5,0,0,0,10,1.25h0a1.5,1.5,0,0,0-1.5,1.5V8.5H2.75a1.5,1.5,0,0,0,0,3H8.5v5.75a1.5,1.5,0,0,0,1.5,1.5h0a1.5,1.5,0,0,0,1.5-1.5V11.5h5.75a1.5,1.5,0,0,0,0-3Z"></path>
+                                            </svg>
+                                        </div>
+                                    </button>
+                                </div>
+                                <div class="swiper-slide ">
+                                    <div class="icon-card-content">
+                                        <div class="icon-container">
+                                            <img src="./assets/images/icon_graduationcap__deq4w8v7accy_large.png" alt="">
+                                        </div>
+                                        <div class="text-container">
+                                            <h3 class="text-title">Save on a new iPad with education pricing.</h3>
+                                            <p class="text-desc">Available to college students and educators.</p>
+                                        </div>
+                                    </div>
+                                    <button class="popup-btn">
+                                        <div class="ico-wrap">
+                                            <svg class="popup-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                                                <path d="M17.25,8.51H11.5V2.75A1.5,1.5,0,0,0,10,1.25h0a1.5,1.5,0,0,0-1.5,1.5V8.5H2.75a1.5,1.5,0,0,0,0,3H8.5v5.75a1.5,1.5,0,0,0,1.5,1.5h0a1.5,1.5,0,0,0,1.5-1.5V11.5h5.75a1.5,1.5,0,0,0,0-3Z"></path>
+                                            </svg>
+                                        </div>
+                                    </button>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="icon-card-content">
+                                        <div class="icon-container">
+                                            <img src="./assets/images/icon_truck_box__dtauyuqshwcy_large.png" alt="">
+                                        </div>
+                                        <div class="text-container">
+                                            <h3 class="text-title">Get flexible delivery and easy pickup.</h3>
+                                            <p class="text-desc">Choose two-hour delivery from an Apple Store, free delivery or easy pickup options.</p>
+                                        </div>
+                                    </div>
+                                    <button class="popup-btn">
+                                        <div class="ico-wrap">
+                                            <svg class="popup-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                                                <path d="M17.25,8.51H11.5V2.75A1.5,1.5,0,0,0,10,1.25h0a1.5,1.5,0,0,0-1.5,1.5V8.5H2.75a1.5,1.5,0,0,0,0,3H8.5v5.75a1.5,1.5,0,0,0,1.5,1.5h0a1.5,1.5,0,0,0,1.5-1.5V11.5h5.75a1.5,1.5,0,0,0,0-3Z"></path>
+                                            </svg>
+                                        </div>
+                                    </button>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="icon-card-content">
+                                        <div class="icon-container">
+                                            <img src="./assets/images/icon_emoji_face_grinning__c668x7gh1ksy_large.png" alt="">
+                                        </div>
+                                        <div class="text-container">
+                                            <h3 class="text-title">Personalize your iPad for free.</h3>
+                                            <p class="text-desc">Engrave your new iPad with a mix of emoji, names, initals, and numbers.</p>
+                                        </div>
+                                    </div>
+                                    <button class="popup-btn">
+                                        <div class="ico-wrap">
+                                            <svg class="popup-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                                                <path d="M17.25,8.51H11.5V2.75A1.5,1.5,0,0,0,10,1.25h0a1.5,1.5,0,0,0-1.5,1.5V8.5H2.75a1.5,1.5,0,0,0,0,3H8.5v5.75a1.5,1.5,0,0,0,1.5,1.5h0a1.5,1.5,0,0,0,1.5-1.5V11.5h5.75a1.5,1.5,0,0,0,0-3Z"></path>
+                                            </svg>
+                                        </div>
+                                    </button>
+                                </div>
+                                <div class="swiper-slide ">
+                                    <div class="icon-card-content">
+                                        <div class="icon-container">
+                                            <img src="./assets/images/icon_person_macwindow__b1fzozc0sjqq_large.png" alt="">
+                                        </div>
+                                        <div class="text-container">
+                                            <h3 class="text-title">Shop live with a Specialist.</h3>
+                                            <p class="text-desc">Let us guide you live over video and answer all of your questions.</p>
+                                        </div>
+                                    </div>
+                                    <button class="popup-btn">
+                                        <div class="ico-wrap">
+                                            <svg class="popup-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                                                <path d="M17.25,8.51H11.5V2.75A1.5,1.5,0,0,0,10,1.25h0a1.5,1.5,0,0,0-1.5,1.5V8.5H2.75a1.5,1.5,0,0,0,0,3H8.5v5.75a1.5,1.5,0,0,0,1.5,1.5h0a1.5,1.5,0,0,0,1.5-1.5V11.5h5.75a1.5,1.5,0,0,0,0-3Z"></path>
+                                            </svg>
+                                        </div>
+                                    </button>
+                                </div>
+                                <div class="swiper-slide ">
+                                    <div class="icon-card-content">
+                                        <div class="icon-container">
+                                            <img src="./assets/images/icon_person_2__phrxt1oh63mu_large.png" alt="">
+                                        </div>
+                                        <div class="text-container">
+                                            <h3 class="text-title">Get to know your new iPad.</h3>
+                                            <p class="text-desc">Learn how to get the most out of your new iPad with a free one-on-one Personal Session.</p>
+                                        </div>
+                                    </div>
+                                    <button class="popup-btn">
+                                        <div class="ico-wrap">
+                                            <svg class="popup-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                                                <path d="M17.25,8.51H11.5V2.75A1.5,1.5,0,0,0,10,1.25h0a1.5,1.5,0,0,0-1.5,1.5V8.5H2.75a1.5,1.5,0,0,0,0,3H8.5v5.75a1.5,1.5,0,0,0,1.5,1.5h0a1.5,1.5,0,0,0,1.5-1.5V11.5h5.75a1.5,1.5,0,0,0,0-3Z"></path>
+                                            </svg>
+                                        </div>
+                                    </button>
+                                </div>
+                                <div class="swiper-slide ">
+                                    <div class="icon-card-content">
+                                        <div class="icon-container">
+                                            <picture id="" class="">
+                                                <img src="./assets/images/icon_app_applestore__dh3qxkqkh06e_large.png" alt="">
+                                            </picture>
+                                        </div>
+                                        <div class="text-container">
+                                            <h3 class="text-title">Explore a shopping experience designed around you.</h3>
+                                            <p class="text-desc">Use the Apple Store app to get a more personal way to shop.</p>
+                                        </div>
+                                    </div>
+                                    <button class="popup-btn">
+                                        <div class="ico-wrap">
+                                            <svg class="popup-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                                                <path d="M17.25,8.51H11.5V2.75A1.5,1.5,0,0,0,10,1.25h0a1.5,1.5,0,0,0-1.5,1.5V8.5H2.75a1.5,1.5,0,0,0,0,3H8.5v5.75a1.5,1.5,0,0,0,1.5,1.5h0a1.5,1.5,0,0,0,1.5-1.5V11.5h5.75a1.5,1.5,0,0,0,0-3Z"></path>
+                                            </svg>
+                                        </div>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-control-wrap inner">
+                            <div class="btn-group">
+                                <button aria-label="Previous" class="swiper-button-prev prev-btn">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36">
+                                        <path d="M21.559,12.062 L15.618,17.984 L21.5221,23.944 C22.105,24.533 22.1021,25.482 21.5131,26.065 C21.2211,26.355 20.8391,26.4999987 20.4571,26.4999987 C20.0711,26.4999987 19.6851,26.352 19.3921,26.056 L12.4351,19.034 C11.8531,18.446 11.8551,17.4999987 12.4411,16.916 L19.4411,9.938 C20.0261,9.353 20.9781,9.354 21.5621,9.941 C22.1471,10.528 22.1451,11.478 21.5591,12.062 L21.559,12.062 Z"></path>
+                                    </svg>
+                                </button>
+                                <button aria-label="Next" class="swiper-button-next next-btn" >
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36">
+                                        <path d="M23.5587,16.916 C24.1447,17.4999987 24.1467,18.446 23.5647,19.034 L16.6077,26.056 C16.3147,26.352 15.9287,26.4999987 15.5427,26.4999987 C15.1607,26.4999987 14.7787,26.355 14.4867,26.065 C13.8977,25.482 13.8947,24.533 14.4777,23.944 L20.3818,17.984 L14.4408,12.062 C13.8548,11.478 13.8528,10.5279 14.4378,9.941 C15.0218,9.354 15.9738,9.353 16.5588,9.938 L23.5588,16.916 L23.5587,16.916 Z"></path>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>                    
+                    </div>
+                </div>
+            </section>
+            <section class="sc-prod rel">
+                <div class="inner">
+                    <div class="title-wrap">
+                        <h2 class="sect-headline">Keep exploring iPad.</h2>
+                        <a href="" class="link-btn">Explore all iPad <span class="icon icon-after icon-arrow"></span></a>
+                    </div>
+                    <div class="prod-wrap">
+                        <div class="prod-group01">
+                            <div class="prod-area">
+                                <img src="./assets/images/ipad_pro__ea93uc0cnvsm_large.jpg" alt="" class="product-image">
+                                <div class="product-color">
+                                    <div class="silver"></div>
+                                    <div class="black">
+                                        <div class="product-color-border"></div>
+                                        <div class="product-color-inner black"></div>
+                                    </div>
+                                </div>
+                                <strong class="product-title">iPad Pro</strong>
+                                <p class="product-desc">The ultimate iPad experience with the most advanced technology.</p>
+                                <p class="product-price">From $999 or $83.25/mo. <br/>for 12 mo.*</p>
+                                <div class="product-links">
+                                    <a href="" class="current-view-link">Currently viewing</a>
+                                    <a href="" class="buy-link">Buy</a>
+                                </div>
+                            </div>
+                            <div class="prod-area">
+                                <img src="./assets/images/ipad_air__crdt2g2u9z0i_large.jpg" alt="" class="product-image">
+                                <div class="product-color">
+                                    <div class="starlight"></div>
+                                    <div class="blue"></div>
+                                    <div class="purple"></div>
+                                    <div class="black">
+                                        <div class="product-color-border"></div>
+                                        <div class="product-color-inner black"></div>
+                                    </div>
+                                </div>
+                                <strong class="product-title">iPad Air</strong>
+                                <p class="product-desc">Serious performance in a thin and light design.</p>
+                                <p class="product-price">From $599 or $49.91/mo. <br/>for 12 mo.*</p>
+                                <div class="product-links">
+                                    <a href="" class="more-view-link">Learn more</a>
+                                    <a href="" class="buy-link">Buy</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="prod-group02">
+                            <ul class="prod-list">
+                                <li class="prod-item">
+                                    <strong>13” or 11”</strong>
+                                    <div class="item-desc">
+                                        <p>Ultra Retina XDR display13</p>    
+                                        <p>ProMotion technology</p>    
+                                        <p>P3 wide color</p>    
+                                        <p>True Tone</p>    
+                                        <p>Antireflective coating</p>    
+                                        <p>Nano-texture display glass option on 1TB and 2TB models</p>
+                                    </div>
+                                </li>
+                                <li class="prod-item">
+                                    <img src="./assets/images/icon_chip_m4__dludbrp4oe2q_large.png" alt="" class="item-img">
+                                    <div class="item-desc">
+                                        <p>M4 chip</p>
+                                    </div>
+                                </li>
+                                <li class="prod-item">
+                                    <img src="./assets/images/ipadpro13_gen7_camera__i9tftpwpgaeu_large.png" alt="" class="item-img">
+                                    <div class="item-desc">
+                                        <p>12MP Wide camera</p>
+                                        <p>4K video, ProRes</p>
+                                    </div>
+                                </li>
+                                <li class="prod-item">
+                                    <img src="./assets/images/ipad_front_camera_landscape__5f0z6qnm4duu_large.png" alt="" class="item-img">
+                                    <div class="item-desc">
+                                        <p>Landscape 12MP Ultra Wide front camera</p>
+                                        <p>TrueDepth camera system</p>
+                                    </div>
+                                </li>
+                                <li class="prod-item">
+                                    <img src="./assets/images/applepencil_vertical_gen4_gen3__cvlnsy8h1cq6_large.png" alt="" class="item-img">
+                                    <div class="item-desc">
+                                        <p>Supports Apple Pencil Pro</p>
+                                        <p>Supports Apple Pencil (USB-C)</p>
+                                    </div>
+                                </li>
+                                <li class="prod-item">
+                                    <img src="./assets/images/magickeyboard_m4_ipad__eyct4630te2q_large.png" alt="" class="item-img">
+                                    <div class="item-desc">
+                                        <p>Supports Magic Keyboard for iPad Pro (M4)</p>
+                                    </div>
+                                </li>
+                            </ul>
+                            <ul class="prod-list">
+                                <li class="prod-item h206">
+                                    <strong>13” or 11”</strong>
+                                    <div class="item-desc">
+                                        <p>Liquid Retina display13</p>    
+                                        <p>P3 wide color</p>    
+                                        <p>True Tone</p>     
+                                        <p>Antireflective coating</p>    
+                                        <p class="desc-gray">Measured diagonally as a rectangle, the 13‑inch iPad Air is 12.9 inches and the 11‑inch iPad Air is 10.86 inches. Actual viewable area is less.</p>
+                                    </div>
+                                </li>
+                                <li class="prod-item">
+                                    <img src="./assets/images/icon_chip_m2__d7dzz5nl7s4m_large.png" alt="" class="item-img">
+                                    <div class="item-desc">
+                                        <p>M2 chip</p>
+                                    </div>
+                                </li>
+                                <li class="prod-item">
+                                    <img src="./assets/images/ipadair13_gen6_camera__gjp0eh0wu4uy_large.png" alt="" class="item-img">
+                                    <div class="item-desc">
+                                        <p>12MP Wide camera</p>
+                                        <p>4K video</p>
+                                    </div>
+                                </li>
+                                <li class="prod-item h130">
+                                    <img src="./assets/images/ipad_front_camera_landscape__5f0z6qnm4duu_large.png" alt="" class="item-img">
+                                    <div class="item-desc">
+                                        <p>Landscape 12MP Ultra Wide front camera</p>
+                                    </div>
+                                </li>
+                                <li class="prod-item">
+                                    <img src="./assets/images/applepencil_vertical_gen4_gen3__cvlnsy8h1cq6_large.png" alt="" class="item-img">
+                                    <div class="item-desc">
+                                        <p>Supports Apple Pencil Pro</p>
+                                        <p>Supports Apple Pencil (USB-C)</p>
+                                    </div>
+                                </li>
+                                <li class="prod-item">
+                                    <img src="./assets/images/magickeyboard_ipad__edtuvwmsedqq_large.png" alt="" class="item-img">
+                                    <div class="item-desc">
+                                        <p>Supports Magic Keyboard</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="access-wrap">
+                        <div class="popup-btn-area">
+                            <button class="popup-btn">
+                                <span class="btn-text">Compare all iPad models</span>
+                                <span class="btn-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36">
+                                        <path id="_art" class="st1" d="M25.5,16.5l-5.9,0l0-5.9C19.6,9.7,18.9,9,18,9c-0.9,0-1.5,0.7-1.5,1.5l0,5.9l-5.9,0h0
+                                        C9.7,16.4,9,17.1,9,18c0,0.9,0.7,1.5,1.5,1.5l5.9,0l0,5.9c0,0.9,0.7,1.5,1.5,1.5c0.9,0,1.5-0.7,1.5-1.5l0-5.9l5.9,0h0
+                                        c0.9,0,1.5-0.7,1.5-1.5C27,17.2,26.3,16.5,25.5,16.5L25.5,16.5z"></path>
+                                    </svg>
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="sc-moreipad">
+                <div class="inner">
+                    <div class="title-wrap">
+                        <h2 class="sect-headline">iPad</h2>
+                    </div>
+                    <div class="ipad-list-wrap">
+                        <ul class="ipad-list">
+                            <li class="ipad-list-title">Explore iPad</li>
+                            <li class="prd-ipad"><a href="">Explore All iPad</a></li>
+                            <li class="prd-ipad"><a href="">iPad Pro</a></li>
+                            <li class="prd-ipad"><a href="">iPad Air</a></li>
+                            <li class="prd-ipad"><a href="">iPad</a></li>
+                            <li class="prd-ipad"><a href="">iPad mini</a></li>
+                            <li class="prd-ipad"><a href="">Apple Pencil</a></li>
+                            <li class="prd-ipad"><a href="">Keyboards</a></li>
+                            <li class="mt30"><a href="">Compare iPad</a></li>
+                            <li><a href="">Why iPad</a></li>
+                        </ul>
+                        <ul class="ipad-list">
+                            <li class="ipad-list-title">Shop iPad</li>
+                            <li><a href="">Shop iPad</a></li>
+                            <li><a href="">iPad Accessories</a></li>
+                            <li><a href="">Apple Trade In</a></li>
+                            <li><a href="">Financing/a></li>
+                        </ul>
+                        <ul class="ipad-list">
+                            <li class="ipad-list-title">More from iPad</li>
+                            <li><a href="">iPad Support</a></li>
+                            <li><a href="">AppleCare+ for iPad</a></li>
+                            <li><a href="">iPadOS 18 Preview</a></li>
+                            <li><a href="">Apple Intelligence</a></li>
+                            <li><a href="">Apps by Apple</a></li>
+                            <li><a href="">iCloud+</a></li>
+                            <li><a href="">Education</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            
+        </div>
+    </main>
+    <footer id="footer">
+        <section class="sc-globalfooter">
+            <div class="inner">
+                <div class="footer-desc-wrap">
+                    <ul>
+                        <li>Δ Available for Qualified Purchasers only. Qualified Purchasers receive an Apple Gift Card when they purchase an Eligible Product at a Qualifying Location through September 30, 2024. Gift card values may vary by Eligible Product. Only one Apple Gift Card per Eligible Product per Qualified Purchaser. Offer subject to availability. While supplies last. Qualified Purchasers shall receive a discount equal to the value of the Apple Gift Card off the price of the Eligible Product, but will be charged for all items in their cart, including the Apple Gift Card. Important notice regarding the checkout receipt and monthly statement for Apple Card Monthly Installments (ACMI) purchases with this promotion:Qualified Purchasers selecting ACMI (a 0% APR payment option available only in the U.S.) as payment type at checkout shall receive a discount equal to the value of the Apple Gift Card off the price of the Eligible Product. This will result in one ACMI installment plan over 12 months for the Eligible Product discounted by the instant credit, and a second ACMI installment plan over 12 months for the full price of the Apple Gift Card. The total combined amount charged over the two separate ACMI installment plans will reflect the original full retail price of the Eligible Product. Separately, Qualified Purchasers will receive and be charged for the Apple Gift Card in the amount of the applicable discount off the Eligible Product. Apple Card Monthly Installments (ACMI) is a 0% APR payment option that is only available if you select it at checkout in the U.S. for eligible products purchased at Apple Store locations, <a href="">apple.com</a>, the Apple Store app, or by calling 1‑800‑MY‑APPLE, and is subject to credit approval and credit limit. See <a href="">support.apple.com/kb/HT211204</a> for more information about eligible products. APR ranges may vary based on when you accepted an Apple Card. Cardholders who accept an Apple Card on and/or after February 1, 2024: Variable APRs for Apple Card, other than ACMI, range from 19.24% to 29.49% based on creditworthiness. Rates as of February 1, 2024. Existing cardholders: See your Customer Agreement for applicable rates and fee. If you buy an ACMI‑eligible product by choosing to pay in full with Apple Card (instead of using ACMI), that purchase is subject to the Apple Card variable APR, not 0% APR. Taxes and shipping on ACMI purchases are subject to the variable APR, not 0% APR. When you buy an iPhone with ACMI, you’ll need to select AT&T, T‑Mobile, or Verizon as your carrier when you check out. An iPhone purchased with ACMI is always unlocked, so you can switch carriers at any time. ACMI is not available for purchases made online at the following special stores: Apple Employee Purchase Plan; participating corporate Employee Purchase Programs; Apple at Work for small businesses; Government, and Veterans and Military Purchase Programs, or on refurbished devices. The last month’s payment for each product will be the product’s purchase price, less all other payments at the monthly payment amount. ACMI financing is subject to change at any time for any reason, including but not limited to, installment term lengths and eligible products. See support.apple.com/kb/HT211204 for information about upcoming changes to ACMI financing. See the <a href="">Apple Card Customer Agreement</a> for more information about ACMI financing. Apple Card is issued by Goldman Sachs Bank USA, Salt Lake City Branch. Available for qualifying applicants in the United States. If you reside in the U.S. territories, please call Goldman Sachs at 877-255-5923 with questions about accessing this offer or applying for Apple Card. This offer cannot be combined with the Apple Employee Purchase Plan or business loyalty pricing. Additional restrictions apply. View full terms and conditions of offer <a href="">here</a>.
+                        </li>
+                        <li>combined with the Apple Employee Purchase Plan or business loyalty pricing. Additional restrictions apply. View full terms and conditions of offer here.
+                            * Monthly pricing is available when you select Apple Card Monthly Installments (ACMI) as payment type at checkout at Apple, and is subject to credit approval and credit limit. Financing terms vary by product. Taxes and shipping are not included in ACMI and are subject to your card’s variable APR. See the <a href="">Apple Card Customer Agreement</a> for more information. ACMI is not available for purchases made online at special storefronts. The last month’s payment for each product will be the product's purchase price, less all other payments at the monthly payment amount. ACMI financing is subject to change at any time for any reason, including but not limited to, installment term lengths and eligible products. See <a href="">support.apple.com/kb/HT211204</a> for information about upcoming changes to ACMI financing.
+                        </li>
+                        <li>** Special pricing available to qualified customers. To learn more about how to start qualifying toward special pricing, talk to an Apple Specialist in a store or give us a call at 1‑800‑MY‑APPLE.
+                        </li>
+                        <li>◊ Apple Card Monthly Installments (ACMI) is a 0% APR payment option that is only available if you select it at checkout in the U.S. for eligible products purchased at Apple Store locations, <a href="">apple.com</a>, the Apple Store app, or by calling 1‑800‑MY‑APPLE, and is subject to credit approval and credit limit. See <a href="">support.apple.com/kb/HT211204</a> for more information about eligible products. APR ranges may vary based on when you accepted an Apple Card. Cardholders who accept an Apple Card on and/or after February 1, 2024: Variable APRs for Apple Card, other than ACMI, range from 19.24% to 29.49% based on creditworthiness. Rates as of February 1, 2024. Existing cardholders: See your Customer Agreement for applicable rates and fee. If you buy an ACMI‑eligible product by choosing to pay in full with Apple Card (instead of using ACMI), that purchase is subject to the Apple Card variable APR, not 0% APR. Taxes and shipping on ACMI purchases are subject to the variable APR, not 0% APR. When you buy an iPhone with ACMI, you’ll need to select AT&T, T‑Mobile, or Verizon as your carrier when you check out. An iPhone purchased with ACMI is always unlocked, so you can switch carriers at any time. ACMI is not available for purchases made online at the following special stores: Apple Employee Purchase Plan; participating corporate Employee Purchase Programs; Apple at Work for small businesses; Government, and Veterans and Military Purchase Programs, or on refurbished devices. The last month’s payment for each product will be the product’s purchase price, less all other payments at the monthly payment amount. ACMI financing is subject to change at any time for any reason, including but not limited to, installment term lengths and eligible products. See <a href="">support.apple.com/kb/HT211204</a> for information about upcoming changes to ACMI financing. See the <a href="">Apple Card Customer Agreement</a> for more information about ACMI financing.
+                        </li>
+                        <li>To access and use all Apple Card features and products available only to Apple Card users, you must add Apple Card to Wallet on an iPhone or iPad that supports and has the latest version of iOS or iPadOS. Apple Card is subject to credit approval, available only for qualifying applicants in the United States, and issued by Goldman Sachs Bank USA, Salt Lake City Branch.</li>
+                        <li>
+                            If you reside in the U.S. territories, please call Goldman Sachs at 877-255-5923 with questions about Apple Card.
+                            <ul class="press-ul">
+                                <li class="press-txt"><span>1.</span>Accessories sold separately.</li>
+                                <li class="press-txt"><span>2.</span>The 13-inch iPad Pro is 5.1 mm and the 11-inch iPad Pro is 5.3 mm.</li>
+                                <li class="press-txt"><span>3.</span>Testing conducted by Apple in March and April 2024 using preproduction iPad Pro 13‑inch (M4) units with 10‑core CPU and 16GB of RAM, as well as production iPad Pro 12.9‑inch (6th generation) units with 8‑core CPU and 16GB of RAM. Prerelease Octane X 2024.1 (a4) 4-09-2024 for iPad tested using a scene with 780,000 meshes and 27 million unique primitives, utilizing hardware-accelerated ray tracing on M4‑based systems and software-based ray tracing on all other units. Performance tests are conducted using specific iPad units and reflect the approximate performance of iPad Pro.</li>
+                                <li class="press-txt"><span>4.</span>Testing conducted by Apple in March and April 2024 using preproduction iPad Pro 13‑inch (M4) units with 10‑core CPU and 16GB of RAM, as well as production iPad Pro 12.9‑inch (6th generation) units with 8‑core CPU and 16GB of RAM. Tested with Affinity Photo 2 v2.4.0.2301 using the built‑in benchmark version 21000. Performance tests are conducted using specific iPad units and reflect the approximate performance of iPad Pro.</li>
+                                <li class="press-txt"><span>5.</span>Testing conducted by Apple in March and April 2024 using preproduction iPad Pro 11‑inch (M4) and iPad Pro 13‑inch (M4) units. Testing consisted of full battery discharge while performing each of the following tasks: video playback and internet browsing using Wi‑Fi or cellular data network (cellular models subscribed to LTE and 5G carrier networks). Video content was a repeated 2‑hour 23‑minute movie purchased from the iTunes Store. Internet over Wi‑Fi and cellular data network tests were conducted using dedicated web servers, browsing snapshot versions of 20 popular web pages. All settings were default except: Wi‑Fi was associated with a network (except for internet browsing over cellular data network); the Wi‑Fi feature Ask to Join Networks and Auto-Brightness were turned off; Brightness was set to 50%; and WPA2 encryption was enabled. Battery life depends on device settings, usage, network, and many other factors. Battery tests are conducted using specific iPad units; actual results may vary.</li>
+                                <li class="press-txt"><span>6.</span>iPad Pro models with 256GB or 512GB storage feature the Apple M4 chip with 9‑core CPU. iPad Pro models with 1TB or 2TB storage feature the Apple M4 chip with 10‑core CPU.</li>
+                                <li class="press-txt"><span>7.</span>Coming later this spring and requires Final Cut Pro for iPad 2.
+                                    Wi‑Fi 6E available in countries and regions where supported. Data plan required. 5G</li>
+                                <li class="press-txt"><span>8.</span>Wi‑Fi 6E available in countries and regions where supported. Data plan required. 5G is available in select markets and through select carriers. Speeds vary based on site conditions and carrier. For details on 5G support, contact your carrier and see <a href="">apple.com/ipad/cellular</a>.</li>
+                                <li class="press-txt"><span>9.</span>Not all carriers support eSIM. See your carrier for more details. For models A3007 and A3006, contact China Unicom for more details.</li>
+                                <li class="press-txt"><span>10.</span>Based on retail packaging as shipped by Apple. Breakdown of U.S. retail packaging by weight. Adhesives, inks, and coatings are excluded from our calculations of plastic content and packaging weight.</li>
+                                <li class="press-txt"><span>11.</span>Trade-in values will vary based on the condition, year, and configuration of your eligible trade-in device. Not all devices are eligible for credit. You must be at least 18 years old to be eligible to trade in for credit or for an Apple Gift Card. Trade-in value may be applied toward qualifying new device purchase, or added to an Apple Gift Card. Actual value awarded is based on receipt of a qualifying device matching the description provided when estimate was made. Sales tax may be assessed on full value of a new device purchase. In-store trade-in requires presentation of a valid photo ID (local law may require saving this information). Offer may not be available in all stores, and may vary between in-store and online trade-in. Some stores may have additional requirements. Apple or its trade-in partners reserve the right to refuse or limit quantity of any trade-in transaction for any reason. More details are available from Apple’s trade-in partner for trade-in and recycling of eligible devices. Restrictions and limitations may apply.</li>
+                                <li class="press-txt"><span>12.</span>You can return your iPad even if you engrave it. And when you’re ready to upgrade, it won’t change your trade‑in value.</li>
+                                <li class="press-txt"><span>13.</span>The displays have rounded corners. When measured diagonally as a rectangle, the 13‑inch iPad Pro is 13 inches, the 11‑inch iPad Pro is 11.1 inches, the 13‑inch iPad Air is 12.9 inches, the 11‑inch iPad Air and iPad (10th generation) are 10.86 inches, and the iPad mini is 8.3 inches. Actual viewable area is less.</li>
+                            </ul>
+                        </li>
+                        <li>Apps are available on the App Store. Title availability is subject to change.</li>
+                        <li>Zbrush for iPad is coming to the App Store later this year.</li>
+                        <li>Architectural Project designed by Alberto Beitia using Trimble SketchUp.</li>
+                    </ul>
+                </div>
+                <div class="ft-nav-wrap">
+                    <ul class="nav-top-list">
+                        <li><a href=""></a></li>
+                        <li><a href="">iPad</a></li>
+                        <li><a href="">iPad Pro</a></li>
+                    </ul>
+                    <div class="nav-list">
+                        <div class="nav-list-column">
+                            <ul>
+                                <li class="nav-list-column-tit"><a href="">Shop and Learn</a></li>
+                                <li><a href="">Store</a></li>
+                                <li><a href="">Mac</a></li>
+                                <li><a href="">iPad</a></li>
+                                <li><a href="">iPhone</a></li>
+                                <li><a href="">Watch</a></li>
+                                <li><a href="">Vision</a></li>
+                                <li><a href="">AirPods</a></li>
+                                <li><a href="">TV & Home</a></li>
+                                <li><a href="">AirTag</a></li>
+                                <li><a href="">Accessories</a></li>
+                                <li><a href="">Gift Cards</a></li>
+                            </ul>
+                            <ul>
+                                <li class="nav-list-column-tit"><a href="">Apple Wallet</a></li>
+                                <li><a href="">Wallet</a></li>
+                                <li><a href="">Apple Card</a></li>
+                                <li><a href="">Apple Pay</a></li>
+                                <li><a href="">Apple Cash</a></li>
+                            </ul>
+                        </div>
+                        <div class="nav-list-column">
+                            <ul>
+                                <li class="nav-list-column-tit"><a href="">Account</a></li>
+                                <li><a href="">Manage Your Apple ID</a></li>
+                                <li><a href="">Apple Store Account</a></li>
+                                <li><a href="">iCloud.com</a></li>
+                            </ul>
+                            <ul>
+                                <li class="nav-list-column-tit"><a href="">Entertainment</a></li>
+                                <li><a href="">Apple One</a></li>
+                                <li><a href="">Apple TV+</a></li>
+                                <li><a href="">Apple Musice</a></li>
+                                <li><a href="">Apple Arcade</a></li>
+                                <li><a href="">Apple Fitness+</a></li>
+                                <li><a href="">Apple News+</a></li>
+                                <li><a href="">Apple Podcasts</a></li>
+                                <li><a href="">Apple Books</a></li>
+                                <li><a href="">App Store</a></li>
+                            </ul>
+                        </div>
+                        <div class="nav-list-column">
+                            <ul>
+                                <li class="nav-list-column-tit"><a href="">Apple Store</a></li>
+                                <li><a href="">Find a Store</a></li>
+                                <li><a href="">Genius Bar</a></li>
+                                <li><a href="">Today at Apple</a></li>
+                                <li><a href="">Group Reservations</a></li>
+                                <li><a href="">Apple Camp</a></li>
+                                <li><a href="">Apple Store App</a></li>
+                                <li><a href="">Certified Refurbished</a></li>
+                                <li><a href="">Apple Trade In</a></li>
+                                <li><a href="">Financing</a></li>
+                                <li><a href="">Carrier Deals at Apple</a></li>
+                                <li><a href="">Order Status</a></li>
+                                <li><a href="">Shopping Help</a></li>
+                            </ul>
+                        </div>
+                        <div class="nav-list-column">
+                            <ul>
+                                <li class="nav-list-column-tit"><a href="">For Business</a></li>
+                                <li><a href="">Apple and Business</a></li>
+                                <li><a href="">Shop for Business</a></li>
+                            </ul>
+                            <ul>
+                                <li class="nav-list-column-tit"><a href="">For Education</a></li>
+                                <li><a href="">Apple and Education</a></li>
+                                <li><a href="">Shop for K-12</a></li>
+                                <li><a href="">Shop for College</a></li>
+                            </ul>
+                            <ul>
+                                <li class="nav-list-column-tit">For Healthcare<a href=""></a></li>
+                                <li><a href="">Apple in Healthcare</a></li>
+                                <li><a href="">Mac in Healthcare</a></li>
+                                <li><a href="">Health on Apple Watch</a></li>
+                                <li><a href="">Health Records on iPhone and iPad</a></li>
+                            </ul>
+                            <ul>
+                                <li class="nav-list-column-tit">For Government<a href=""></a></li>
+                                <li><a href="">Shop for Government</a></li>
+                                <li><a href="">Shop for Veterans and Military</a></li>
+                            </ul>
+                        </div>
+                        <div class="nav-list-column">
+                            <ul>
+                                <li class="nav-list-column-tit"><a href="">Apple Values</a></li>
+                                <li><a href="">Accessibility</a></li>
+                                <li><a href="">Education</a></li>
+                                <li><a href="">Environment</a></li>
+                                <li><a href="">Inclusion and Diversity</a></li>
+                                <li><a href="">Privacy</a></li>
+                                <li><a href="">Racial Equity and Justice</a></li>
+                                <li><a href="">Supply Chain</a></li>
+                            </ul>
+                            <ul>
+                                <li class="nav-list-column-tit"><a href="">About Apple</a></li>
+                                <li><a href="">Newsroom</a></li>
+                                <li><a href="">Apple Leadership</a></li>
+                                <li><a href="">Career Opportunities</a></li>
+                                <li><a href="">Investors</a></li>
+                                <li><a href="">Ethics & Compliance</a></li>
+                                <li><a href="">Events</a></li>
+                                <li><a href="">Contact Apple</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="ft-desc-wrap">
+                    <p class="ft-desc">More ways to shop: <a href="">Find an Apple Store</a> or <a href="">other retailer</a> near you. Or call 1-800-MY-APPLE.</p>
+                    <div class="ft-bottom">
+                        <small>Copyright © 2024 Apple Inc. All rights reserved.</small>
+                        <ul>
+                            <li><a href="">Privacy Policy</a></li>
+                            <li><a href="">Terms of Use</a></li>
+                            <li><a href="">ales and Refunds</a></li>
+                            <li><a href="">Legal</a></li>
+                            <li><a href="">Site Map</a></li>
+                        </ul>
+                        <span class="country">United States</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </footer>
+</body>
+</html>
+
+
